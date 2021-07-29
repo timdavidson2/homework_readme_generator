@@ -29,9 +29,9 @@ function renderLicenseBadge(license) {
 		default:
 			badge = '';
 			break;
-	};
+	}
 	return badge;
-};
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -62,11 +62,11 @@ function renderLicenseLink(license) {
 				url = `[${license}](https://opensource.org/licenses/EPL-2.0)`;
 				break;
 			default:
-				url = ''
+				url = '';
 				break;
 	}
 	return url;
-};
+}
 
 	// TODO: Create a function that returns the license section of README
 	// If there is no license, return an empty string
@@ -79,9 +79,9 @@ function renderLicenseLink(license) {
 ${renderLicenseBadge(license)}
 ${renderLicenseLink(license)}
 `
-				)
-			};
-	};
+				);
+			}
+	}
 
 	// TODO: Create a function to generate markdown for README
 	function generateMarkdown(data) {
@@ -112,7 +112,7 @@ ${data.questions}
 ## Contact
 [GitHub Profile](https://github.com/${data.github})
 [Email Me](${data.email})
-`
-};
+`;
+}
 
 module.exports = generateMarkdown;
