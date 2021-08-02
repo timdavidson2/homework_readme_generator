@@ -9,24 +9,24 @@ const questions = [
     type: "input",
     name: "title",
     message:
-      "What is the title of your project?\n- Something thoughtful that really captures the idea of your project.\n",
+      "Give your project a Title. This should be something that is descriptive of what the app does. ",
   },
   {
     type: "input",
     name: "description",
     message:
-      "Provide a short description of the project, use the following as guides:\n- What is your motivation?\n- Why was this project built?\n- What problem does it solve?\n- What did you learn?\n",
+      "Provide a short description of the project, use the following as guides: What was your motivation? Why is this useful? What problem does it solve?",
   },
   {
     type: "input",
     name: "installation",
-    message: "What are the required steps to install the project?\n",
+    message: "What are the required steps to install the project?",
   },
   {
     type: "input",
     name: "usage",
     message:
-      "How do you use this project?\n- Provide instructions and examples.\n",
+      "Provide instructions and examples.",
   },
   {
     type: "list",
@@ -46,29 +46,23 @@ const questions = [
   {
     type: "input",
     name: "contributors",
-    message: "Who contributed to this project?\n",
+    message: "Who contributed to this project?",
   },
   {
     type: "input",
     name: "tests",
-    message: "What are the test instructions for the project, if any?\n",
-  },
-  {
-    type: "input",
-    name: "questions",
-    message:
-      "What questions do you want answered about the project?\nThink of this as being open-ended allowing users to help you out in the future.\n",
+    message: "What are the test instructions for the project, if any?",
   },
   {
     type: "input",
     name: "github",
     message:
-      "What github do you want to use?\n- Make sure to spell it correctly!\n",
+      "What github do you want to use? Make sure to spell it correctly!",
   },
   {
     type: "input",
     name: "email",
-    message: "What is your email address?\n",
+    message: "What is your email address?",
   },
 ];
 
@@ -82,7 +76,7 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
   inquirer.prompt(questions).then((res) => {
-    writeToFile("./example/README.md", generateMarkdown(res));
+    writeToFile("./README example/README.md", generateMarkdown(res));
   });
 }
 
