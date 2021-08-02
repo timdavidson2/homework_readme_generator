@@ -13,7 +13,7 @@ The app allows for the automation of generating the README.MD for an app
 - [Contact](#contact)
 ## Installation
 You will need to be runing in the direcotry of the app and then type 'node index'.
- ![Sample](https://drive.google.com/file/d/1qrhqDf0fmPyDBiArXXTotpLYysDktaF-/view?usp=sharing) 
+ [Sample](https://drive.google.com/file/d/1qrhqDf0fmPyDBiArXXTotpLYysDktaF-/view?usp=sharing) 
 
 
 ## Usage
